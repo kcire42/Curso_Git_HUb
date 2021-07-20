@@ -16,7 +16,11 @@ def pares_impar():
     
 
 def generador_contraseñas():
-    letras_minusculas = ("a","b","c","d","f","g","h","i","j","k","l","m","")
+    letras_minusculas = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z")
+    letras_mayusculas = ("A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z")
+    caracteres_extraños = ("!","","#","$","%","&","/","(",")","=","?","'","¿","¡")
+    caracteres = (letras_minusculas, letras_mayusculas, caracteres_extraños)
+    print(caracteres)
 
 
 if __name__ == "__main__":
@@ -31,3 +35,5 @@ if __name__ == "__main__":
         longitud_cadena()
     if opcion == 2:
         pares_impar()
+    if opcion == 3: 
+        generador_contraseñas()
