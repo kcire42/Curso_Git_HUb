@@ -71,6 +71,25 @@ def cuenta_atras():
     for i in range(0, numero+1):
         print(numero)
         numero-=1
+
+def interes ():
+    inversion = float(input("Ingrese la cantidad a invertir: "))
+    años_a_invertir = int(input("Ingrese cuantos años vaz a invertir: "))
+    interes = 0.1
+    ingreso = inversion
+    
+
+    for i in range(años_a_invertir):
+        ##print(inversion)
+        ganancia = inversion * interes
+        inversion = inversion + ganancia
+        ##print(inversion)
+    intereses = inversion-ingreso
+    print(f"tu ganancia total despues {años_a_invertir} años es de {intereses} lo que te un total de: {inversion}")
+
+
+      
+        
     
 
 
@@ -83,6 +102,7 @@ if __name__ == "__main__":
     5- Edad
     6- Impares
     7- Cuenta_atras
+    8- Interes
     """)
     opcion = int(input("Ingrese el numero deseado: "))
 
@@ -101,3 +121,5 @@ if __name__ == "__main__":
         impares()
     if opcion == 7:
         cuenta_atras()
+    if opcion == 8:
+        interes()
