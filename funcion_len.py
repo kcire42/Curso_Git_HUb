@@ -44,12 +44,34 @@ def palabra_repetida():
 def edad():
     edad = int(input("Ingrese su edad:"))
     edad= edad+1
-    
+
     for i in range(edad):
         if i == 1:
             print(f"{i} año")
         elif i > 1:
             print(f"{i} años")
+
+def impares():
+    numero = int(input("Ingrese un numero"))
+    numero =numero+1
+    lista_numeros= []
+    for i in range(numero):
+        modulo = i%2
+        if modulo ==1:
+            print(i, end=", ")
+            #lista_numeros.append(i)
+        else:
+            continue
+    #print(lista_numeros)
+
+
+def cuenta_atras():
+    numero = int(input("Ingrese el numero a contar: "))
+
+    for i in range(0, numero+1):
+        print(numero)
+        numero-=1
+    
 
 
 if __name__ == "__main__":
@@ -59,6 +81,8 @@ if __name__ == "__main__":
     3- Generador de contraseñas
     4- Palabra Repetida
     5- Edad
+    6- Impares
+    7- Cuenta_atras
     """)
     opcion = int(input("Ingrese el numero deseado: "))
 
@@ -73,3 +97,7 @@ if __name__ == "__main__":
         palabra_repetida()
     if opcion == 5:
         edad()
+    if opcion == 6:
+        impares()
+    if opcion == 7:
+        cuenta_atras()
