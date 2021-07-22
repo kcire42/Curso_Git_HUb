@@ -33,13 +33,23 @@ def generador_contraseñas():
     contraseña = "".join(contraseña)    
     print(f"Tu nueva contraseña: {contraseña}")
 
-def palabra():
-    nombre = str(input("Ingrese una palabra"))
-    cantidad = int(input("Ingrese el numero de veces que desea repetirla"))
+def palabra_repetida():
+    nombre = str(input("Ingrese una palabra: "))
+    cantidad = int(input("Ingrese el numero de veces que desea repetirla: "))
     j= 0
     for i in range (cantidad):
         j += 1
         print(f"{j}- {nombre}")
+
+def edad():
+    edad = int(input("Ingrese su edad:"))
+    edad= edad+1
+    
+    for i in range(edad):
+        if i == 1:
+            print(f"{i} año")
+        elif i > 1:
+            print(f"{i} años")
 
 
 if __name__ == "__main__":
@@ -47,6 +57,8 @@ if __name__ == "__main__":
     1- Longitud de Cadena
     2- Numero  par y impar
     3- Generador de contraseñas
+    4- Palabra Repetida
+    5- Edad
     """)
     opcion = int(input("Ingrese el numero deseado: "))
 
@@ -57,3 +69,7 @@ if __name__ == "__main__":
         pares_impar()
     if opcion == 3: 
         generador_contraseñas()
+    if opcion == 4: 
+        palabra_repetida()
+    if opcion == 5:
+        edad()
