@@ -99,7 +99,7 @@ def raiz():
 
 if __name__ == "__main__":
     print("""
-    MENU 
+    MENU DE EJERCICIOS BASICOS
     1- Longitud de Cadena
     2- Numero  par y impar
     3- Generador de contraseñas
