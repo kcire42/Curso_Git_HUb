@@ -96,6 +96,7 @@ def interes ():
 if __name__ == "__main__":
     print("""
     Este es el menu que hice 
+    Acabas de entrar al multiverso de la programacion bienvenido al universo 617 antes estabas en el 616
     1- Longitud de Cadena
     2- Numero  par y impar
     3- Generador de contraseñas
