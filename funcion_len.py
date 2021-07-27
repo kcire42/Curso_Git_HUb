@@ -1,5 +1,5 @@
 import random
-
+import math
 
 def longitud_cadena():
     cadena = input(str("Ingrse la cadena"))
@@ -88,6 +88,10 @@ def interes ():
     print(f"tu ganancia total despues {años_a_invertir} años es de {intereses} lo que te un total de: {inversion}")
 
 
+def raiz():
+    numero = float(input("Ingrese un numero"))
+    raiz = math.sqrt(numero)
+    print(f"La raiz de {numero} es igual a:{raiz}")
       
         
     
