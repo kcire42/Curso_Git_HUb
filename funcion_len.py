@@ -95,11 +95,7 @@ def interes ():
 
 if __name__ == "__main__":
     print("""
-<<<<<<< HEAD
-    Este es el menu que hicy 
-=======
-    Este es el menu que hico 
->>>>>>> rama_2
+    Este es el menu que hice 
     Acabas de entrar al multiverso de la programacion bienvenido al universo 617 antes estabas en el 616
     1- Longitud de Cadena
     2- Numero  par y impar
