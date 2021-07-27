@@ -95,6 +95,7 @@ def interes ():
 
 if __name__ == "__main__":
     print("""
+    Este es el menu que hice 
     1- Longitud de Cadena
     2- Numero  par y impar
     3- Generador de contraseñas
