@@ -92,6 +92,14 @@ def raiz():
     numero = float(input("Ingrese un numero"))
     raiz = math.sqrt(numero)
     print(f"La raiz de {numero} es igual a:{raiz}")
+
+def generador_triangulo_rectangulo():
+    altura  = int(input("Ingrese la altura"))
+    base = int(input("ingrese la base"))
+    
+    for i in range(1,altura+1):
+        cantidad_puntos = "x"*i
+        print(cantidad_puntos)
       
         
     
@@ -108,6 +116,8 @@ if __name__ == "__main__":
     6- Impares
     7- Cuenta_atras
     8- Interes
+    9- raiz
+    10-generador de triangulo rectangulo
     """)
     opcion = int(input("Ingrese el numero deseado: "))
 
@@ -128,3 +138,8 @@ if __name__ == "__main__":
         cuenta_atras()
     if opcion == 8:
         interes()
+    if opcion == 9:
+        raiz()
+    if opcion == 10:
+        generador_triangulo_rectangulo()
+
