@@ -1,5 +1,6 @@
 import random
 import math
+#cd c/Users/erick.carrillo/Documents/Erick/Python/Ejercicios/Ejercicios_python
 
 def longitud_cadena():
     cadena = input(str("Ingrse la cadena"))
@@ -32,6 +33,7 @@ def generador_contraseñas():
     ##print(contraseña)
     contraseña = "".join(contraseña)    
     print(f"Tu nueva contraseña: {contraseña}")
+    return contraseña
 
 def palabra_repetida():
     nombre = str(input("Ingrese una palabra: "))
@@ -93,6 +95,10 @@ def raiz():
     raiz = math.sqrt(numero)
     print(f"La raiz de {numero} es igual a:{raiz}")
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 847676d2088744c47a5b176ac4bfb8543984364b
 def generador_triangulo_rectangulo():
     altura  = int(input("Ingrese la altura"))
     base = int(input("ingrese la base"))
@@ -100,7 +106,18 @@ def generador_triangulo_rectangulo():
     for i in range(1,altura+1):
         cantidad_puntos = "x"*i
         print(cantidad_puntos)
+<<<<<<< HEAD
       
+=======
+def usuario_contraseña():
+    usuario =str(input("Ingrese su usuario:"))
+    contraseña = generador_contraseñas()
+    return (usuario, contraseña)
+
+
+def iniciar_seccion(usuario, contraseña):
+    print(usuario+contraseña)
+>>>>>>> 847676d2088744c47a5b176ac4bfb8543984364b
         
     
 
@@ -118,6 +135,10 @@ if __name__ == "__main__":
     8- Interes
     9- raiz
     10-generador de triangulo rectangulo
+<<<<<<< HEAD
+=======
+    11-usuario y contraseña 
+>>>>>>> 847676d2088744c47a5b176ac4bfb8543984364b
     """)
     opcion = int(input("Ingrese el numero deseado: "))
 
@@ -142,4 +163,9 @@ if __name__ == "__main__":
         raiz()
     if opcion == 10:
         generador_triangulo_rectangulo()
+<<<<<<< HEAD
+=======
+    if opcion == 11:
+        usuario_contraseña()
+>>>>>>> 847676d2088744c47a5b176ac4bfb8543984364b
 
